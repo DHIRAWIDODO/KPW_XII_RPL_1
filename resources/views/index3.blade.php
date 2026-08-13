@@ -468,13 +468,13 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="./starter.html" class="nav-link">
+                <a href="{{ route('starter') }}" class="nav-link">
                   <i class="nav-icon bi bi-file-earmark"></i>
                   <p>Starter Page</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./generate/theme.html" class="nav-link">
+                <a href="{{ route('theme') }}" class="nav-link">
                   <i class="nav-icon bi bi-palette"></i>
                   <p>Theme Generate</p>
                 </a>
@@ -489,19 +489,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./widgets/small-box.html" class="nav-link">
+                    <a href="{{ route('small-box') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Small Box</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./widgets/info-box.html" class="nav-link">
+                    <a href="{{ route('info-box') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>info Box</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./widgets/cards.html" class="nav-link">
+                    <a href="{{ route('card') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Cards</p>
                     </a>

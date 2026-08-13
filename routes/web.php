@@ -37,3 +37,23 @@ Route::get('/forgot-password', function () {
 Route::get('/lockscreen', function () {
     return view('lockscreen');
 })->name('lockscreen');
+
+Route::get('/starter', function () {
+    return view('starter');
+})->name('starter');
+
+Route::get('/theme', function () {
+    return view('theme');
+})->name('theme');
+
+Route::get('/small-box', function () {
+    return view('small-box');
+})->name('small-box');
+
+Route::get('/info-box', function () {
+    return view('info-box');
+})->name('info-box');
+
+Route::get('/card', function () {
+    return view('card');
+})->name('card');
