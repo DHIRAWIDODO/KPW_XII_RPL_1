@@ -441,19 +441,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../index.html" class="nav-link">
+                    <a href="{{ route('dashboard') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v1</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../index2.html" class="nav-link">
+                    <a href="{{ route('dashboard2') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../index3.html" class="nav-link">
+                    <a href="{{ route('dashboard3') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v3</p>
                     </a>
@@ -461,19 +461,19 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="../starter.html" class="nav-link">
-                  <i class="nav-icon bi bi-file-earmark"></i>
+                  <a href="{{ route('starter') }}" class="nav-link">
+                    <i class="nav-icon bi bi-file-earmark"></i>
                   <p>Starter Page</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../generate/theme.html" class="nav-link">
+                <a href="{{ route('theme') }}" class="nav-link">
                   <i class="nav-icon bi bi-palette"></i>
                   <p>Theme Generate</p>
                 </a>
               </li>
-              <li class="nav-item menu-open">
-                <a href="#" class="nav-link active">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-box-seam-fill"></i>
                   <p>
                     Widgets
@@ -482,19 +482,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../widgets/small-box.html" class="nav-link">
+                    <a href="{{ route('small-box') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Small Box</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../widgets/info-box.html" class="nav-link">
+                    <a href="{{ route('info-box') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>info Box</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../widgets/cards.html" class="nav-link active">
+                    <a href="{{ route('card') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Cards</p>
                     </a>

@@ -55,5 +55,5 @@ Route::get('/info-box', function () {
 })->name('info-box');
 
 Route::get('/card', function () {
-    return view('card');
+    return view('cards');
 })->name('card');
