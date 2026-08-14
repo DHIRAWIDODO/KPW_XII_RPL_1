@@ -57,3 +57,7 @@ Route::get('/info-box', function () {
 Route::get('/card', function () {
     return view('cards');
 })->name('card');
+
+Route::get('/users', function () {
+    return view('users');
+})->name('users');
