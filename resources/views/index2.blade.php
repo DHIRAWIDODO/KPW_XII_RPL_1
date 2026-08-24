@@ -637,7 +637,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./mailbox/read.html" class="nav-link">
+                    <a href="{{ route('read') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Read Message</p>
                     </a>
@@ -819,7 +819,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="./pages/404.html" class="nav-link">
+                        <a href="{{ route('404') }}" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>404</p>
                         </a>
