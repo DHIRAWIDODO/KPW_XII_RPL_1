@@ -12,14 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('films', function (Blueprint $table) {
-    $table->id();
-    $table->string('judul', 45);
-    $table->text('ringkasan')->nullable();
-    $table->integer('tahun')->nullable();
-    $table->string('poster', 45)->nullable();
-    $table->foreignId('genre_id')->constrained('genres')->onDelete('cascade');
-    $table->timestamps();
-});
+            $table->id();
+            $table->timestamps();
+        });
     }
 
     /**
