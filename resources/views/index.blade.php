@@ -447,8 +447,8 @@
               data-accordion="false"
               id="navigation"
             >
-              <li class="nav-item menu-open">
-                <a href="#" class="nav-link active">
+                            <li class="nav-item">
+                <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-speedometer"></i>
                   <p>
                     Dashboard
@@ -463,13 +463,13 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ route('dashboard2') }}" class="nav-link">
+                    <a href="{{ route('dashboard2') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ route('dashboard3') }}" class="nav-link">
+                    <a href="{{ route('dashboard3') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v3</p>
                     </a>
@@ -528,73 +528,73 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./layout/unfixed-sidebar" class="nav-link">
+                    <a href="./layout/unfixed-sidebar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Default Sidebar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/fixed-sidebar" class="nav-link">
+                    <a href="./layout/fixed-sidebar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Sidebar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/fixed-header" class="nav-link">
+                    <a href="./layout/fixed-header.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Header</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/fixed-footer" class="nav-link">
+                    <a href="./layout/fixed-footer.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Footer</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/fixed-complete" class="nav-link">
+                    <a href="./layout/fixed-complete.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Complete</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/layout-custom-area" class="nav-link">
+                    <a href="./layout/layout-custom-area.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout <small>+ Custom Area </small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/sidebar-mini" class="nav-link">
+                    <a href="./layout/sidebar-mini.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/collapsed-sidebar" class="nav-link">
+                    <a href="./layout/collapsed-sidebar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Collapsed</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/collapsed-sidebar-without-hover" class="nav-link">
+                    <a href="./layout/collapsed-sidebar-without-hover.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Collapsed + No Hover</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/logo-switch" class="nav-link">
+                    <a href="./layout/logo-switch.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Logo Switch</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/top-nav" class="nav-link">
+                    <a href="./layout/top-nav.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Top Nav <small>+ No Sidebar</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/layout-rtl" class="nav-link">
+                    <a href="./layout/layout-rtl.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout RTL</p>
                     </a>
@@ -611,19 +611,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./UI/general.html" class="nav-link">
+                    <a href="../UI/general.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>General</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./UI/icons.html" class="nav-link">
+                    <a href="../UI/icons.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Icons</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./UI/timeline.html" class="nav-link">
+                    <a href="../UI/timeline.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Timeline</p>
                     </a>
@@ -640,19 +640,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./mailbox/inbox.html" class="nav-link">
+                    <a href="../mailbox/inbox.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Inbox</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./mailbox/read.html" class="nav-link">
+                    <a href="{{ route('read') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Read Message</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./mailbox/compose.html" class="nav-link">
+                    <a href="{{ route('compose') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Compose</p>
                     </a>
@@ -670,37 +670,37 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./forms/elements.html" class="nav-link">
+                    <a href="../forms/elements.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Elements</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./forms/layout.html" class="nav-link">
+                    <a href="../forms/layout.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./forms/validation.html" class="nav-link">
+                    <a href="../forms/validation.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Validation</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./forms/wizard.html" class="nav-link">
+                    <a href="../forms/wizard.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Wizard</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./forms/advanced.html" class="nav-link">
+                    <a href="../forms/advanced.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Advanced Elements</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./forms/editors.html" class="nav-link">
+                    <a href="../forms/editors.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Editors</p>
                     </a>
@@ -717,13 +717,13 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./tables/simple.html" class="nav-link">
+                    <a href="../tables/simple.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Simple Tables</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./tables/data.html" class="nav-link">
+                    <a href="../tables/data.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Data Tables</p>
                     </a>
@@ -740,7 +740,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./charts/apexcharts.html" class="nav-link">
+                    <a href="../charts/apexcharts.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>ApexCharts</p>
                     </a>
@@ -759,61 +759,61 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./pages/profile.html" class="nav-link">
+                    <a href="../pages/profile.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Profile</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/settings.html" class="nav-link">
+                    <a href="../pages/settings.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Settings</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/invoice.html" class="nav-link">
+                    <a href="../pages/invoice.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Invoice</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/calendar.html" class="nav-link">
+                    <a href="../pages/calendar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Calendar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/kanban.html" class="nav-link">
+                    <a href="../pages/kanban.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Kanban</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/chat.html" class="nav-link">
+                    <a href="../pages/chat.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Chat</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/file-manager.html" class="nav-link">
+                    <a href="../pages/file-manager.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>File Manager</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/projects.html" class="nav-link">
+                    <a href="../pages/projects.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Projects</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/pricing.html" class="nav-link">
+                    <a href="../pages/pricing.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Pricing</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/faq.html" class="nav-link">
+                    <a href="../pages/faq.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>FAQ</p>
                     </a>
@@ -828,19 +828,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="./pages/404.html" class="nav-link">
+                        <a href="./pages/400.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>404</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="./pages/500.html" class="nav-link">
+                        <a href="../pages/500.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>500</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="./pages/maintenance.html" class="nav-link">
+                        <a href="../pages/maintenance.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Maintenance</p>
                         </a>
@@ -876,19 +876,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="{{ route('login') }}" class="nav-link">
+                        <a href="../examples/login.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Login</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="{{ route('register') }}" class="nav-link">
+                        <a href="../examples/register.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Register</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="{{ route('forgot-password') }}" class="nav-link">
+                        <a href="../examples/forgot-password.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Forgot Password</p>
                         </a>
@@ -905,13 +905,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="{{ route('login-v2') }}" class="nav-link">
+                        <a href="../examples/login-v2.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Login</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="{{ route('register-v2') }}" class="nav-link">
+                        <a href="../examples/register-v2.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Register</p>
                         </a>
@@ -919,7 +919,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ route('lockscreen') }}" class="nav-link">
+                    <a href="../examples/lockscreen.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Lockscreen</p>
                     </a>

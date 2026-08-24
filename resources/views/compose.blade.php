@@ -1,9 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <!--begin::Head-->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>AdminLTE 4 | Starter Page</title>
+    <title>AdminLTE 4 | Mailbox - Compose</title>
 
     <!--begin::Theme Init (prevents flash of incorrect theme on load, #6043)-->
     <script>
@@ -54,7 +53,7 @@
     <!--end::Accessibility Meta Tags-->
 
     <!--begin::Primary Meta Tags-->
-    <meta name="title" content="AdminLTE 4 | Starter Page" />
+    <meta name="title" content="AdminLTE 4 | Mailbox - Compose" />
     <meta name="author" content="ColorlibHQ" />
     <meta
       name="description"
@@ -69,7 +68,7 @@
     <!--begin::Accessibility Features-->
     <!-- Skip links will be dynamically added by accessibility.js -->
     <meta name="supported-color-schemes" content="light dark" />
-    <link rel="preload" href="./css/adminlte.css" as="style" />
+    <link rel="preload" href="../css/adminlte.css" as="style" />
     <!--end::Accessibility Features-->
 
     <!--begin::Fonts-->
@@ -100,13 +99,10 @@
     <!--end::Third Party Plugin(Bootstrap Icons)-->
 
     <!--begin::Required Plugin(AdminLTE)-->
-    <link rel="stylesheet" href="./css/adminlte.css" />
+    <link rel="stylesheet" href="../css/adminlte.css" />
     <!--end::Required Plugin(AdminLTE)-->
   </head>
-  <!--end::Head-->
-  <!--begin::Body-->
   <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
-    <!--begin::App Wrapper-->
     <div class="app-wrapper">
       <!--begin::Header-->
       <nav class="app-header navbar navbar-expand bg-body">
@@ -127,13 +123,13 @@
             </li>
 
             <li class="nav-item d-none d-md-block">
-              <a href="./index.html" class="nav-link">
+              <a href="../index.html" class="nav-link">
                 <i class="bi bi-grid-1x2 me-1" aria-hidden="true"></i>
                 Live preview
               </a>
             </li>
             <li class="nav-item d-none d-md-block">
-              <a href="./docs/introduction.html" class="nav-link">
+              <a href="../docs/introduction.html" class="nav-link">
                 <i class="bi bi-book me-1" aria-hidden="true"></i>
                 Documentation
               </a>
@@ -160,7 +156,7 @@
                   <div class="d-flex">
                     <div class="flex-shrink-0">
                       <img
-                        src="./assets/img/user1-128x128.jpg"
+                        src="../assets/img/user1-128x128.jpg"
                         alt=""
                         class="img-size-50 rounded-circle me-3"
                       />
@@ -186,7 +182,7 @@
                   <div class="d-flex">
                     <div class="flex-shrink-0">
                       <img
-                        src="./assets/img/user8-128x128.jpg"
+                        src="../assets/img/user8-128x128.jpg"
                         alt=""
                         class="img-size-50 rounded-circle me-3"
                       />
@@ -212,7 +208,7 @@
                   <div class="d-flex">
                     <div class="flex-shrink-0">
                       <img
-                        src="./assets/img/user3-128x128.jpg"
+                        src="../assets/img/user3-128x128.jpg"
                         alt=""
                         class="img-size-50 rounded-circle me-3"
                       />
@@ -349,7 +345,7 @@
             <li class="nav-item dropdown user-menu">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 <img
-                  src="./assets/img/user2-160x160.jpg"
+                  src="../assets/img/user2-160x160.jpg"
                   class="user-image rounded-circle shadow"
                   alt="Alexander Pierce"
                 />
@@ -359,7 +355,7 @@
                 <!--begin::User Image-->
                 <li class="user-header text-bg-primary">
                   <img
-                    src="./assets/img/user2-160x160.jpg"
+                    src="../assets/img/user2-160x160.jpg"
                     class="rounded-circle shadow"
                     alt="Alexander Pierce"
                   />
@@ -406,10 +402,10 @@
         <!--begin::Sidebar Brand-->
         <div class="sidebar-brand">
           <!--begin::Brand Link-->
-          <a href="./index.html" class="brand-link">
+          <a href="../index.html" class="brand-link">
             <!--begin::Brand Image-->
             <img
-              src="./assets/img/AdminLTELogo.png"
+              src="../assets/img/AdminLTELogo.png"
               alt="AdminLTE Logo"
               class="brand-image opacity-75 shadow"
             />
@@ -431,7 +427,7 @@
               data-accordion="false"
               id="navigation"
             >
-              <li class="nav-item">
+                            <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-speedometer"></i>
                   <p>
@@ -441,19 +437,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="{{ route('dashboard') }}" class="nav-link">
+                    <a href="{{ route('dashboard') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v1</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ route('dashboard2') }}" class="nav-link">
+                    <a href="{{ route('dashboard2') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ route('dashboard3') }}" class="nav-link">
+                    <a href="{{ route('dashboard3') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v3</p>
                     </a>
@@ -461,8 +457,8 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="{{ route('starter') }}" class="nav-link">
-                  <i class="nav-icon bi bi-file-earmark"></i>
+                  <a href="{{ route('starter') }}" class="nav-link">
+                    <i class="nav-icon bi bi-file-earmark"></i>
                   <p>Starter Page</p>
                 </a>
               </li>
@@ -512,73 +508,73 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./layout/unfixed-sidebar" class="nav-link">
+                    <a href="../layout/unfixed-sidebar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Default Sidebar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/fixed-sidebar" class="nav-link">
+                    <a href="../layout/fixed-sidebar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Sidebar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/fixed-header" class="nav-link">
+                    <a href="../layout/fixed-header.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Header</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/fixed-footer" class="nav-link">
+                    <a href="../layout/fixed-footer.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Footer</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/fixed-complete" class="nav-link">
+                    <a href="../layout/fixed-complete.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Complete</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/layout-custom-area" class="nav-link">
+                    <a href="../layout/layout-custom-area.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout <small>+ Custom Area </small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/sidebar-mini" class="nav-link">
+                    <a href="../layout/sidebar-mini.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/collapsed-sidebar" class="nav-link">
+                    <a href="../layout/collapsed-sidebar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Collapsed</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/collapsed-sidebar-without-hover" class="nav-link">
+                    <a href="../layout/collapsed-sidebar-without-hover.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Collapsed + No Hover</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/logo-switch" class="nav-link">
+                    <a href="../layout/logo-switch.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Logo Switch</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/top-nav" class="nav-link">
+                    <a href="../layout/top-nav.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Top Nav <small>+ No Sidebar</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/layout-rtl" class="nav-link">
+                    <a href="../layout/layout-rtl.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout RTL</p>
                     </a>
@@ -595,19 +591,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./UI/general.html" class="nav-link">
+                    <a href="../UI/general.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>General</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./UI/icons.html" class="nav-link">
+                    <a href="../UI/icons.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Icons</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./UI/timeline.html" class="nav-link">
+                    <a href="../UI/timeline.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Timeline</p>
                     </a>
@@ -624,7 +620,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./mailbox/inbox.html" class="nav-link">
+                    <a href="../mailbox/inbox.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Inbox</p>
                     </a>
@@ -636,7 +632,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./mailbox/compose.html" class="nav-link">
+                    <a href="{{ route('compose') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Compose</p>
                     </a>
@@ -654,37 +650,37 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./forms/elements.html" class="nav-link">
+                    <a href="../forms/elements.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Elements</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./forms/layout.html" class="nav-link">
+                    <a href="../forms/layout.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./forms/validation.html" class="nav-link">
+                    <a href="../forms/validation.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Validation</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./forms/wizard.html" class="nav-link">
+                    <a href="../forms/wizard.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Wizard</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./forms/advanced.html" class="nav-link">
+                    <a href="../forms/advanced.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Advanced Elements</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./forms/editors.html" class="nav-link">
+                    <a href="../forms/editors.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Editors</p>
                     </a>
@@ -701,13 +697,13 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./tables/simple.html" class="nav-link">
+                    <a href="../tables/simple.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Simple Tables</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./tables/data.html" class="nav-link">
+                    <a href="../tables/data.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Data Tables</p>
                     </a>
@@ -724,7 +720,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./charts/apexcharts.html" class="nav-link">
+                    <a href="../charts/apexcharts.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>ApexCharts</p>
                     </a>
@@ -743,61 +739,61 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./pages/profile.html" class="nav-link">
+                    <a href="../pages/profile.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Profile</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/settings.html" class="nav-link">
+                    <a href="../pages/settings.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Settings</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/invoice.html" class="nav-link">
+                    <a href="../pages/invoice.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Invoice</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/calendar.html" class="nav-link">
+                    <a href="../pages/calendar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Calendar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/kanban.html" class="nav-link">
+                    <a href="../pages/kanban.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Kanban</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/chat.html" class="nav-link">
+                    <a href="../pages/chat.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Chat</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/file-manager.html" class="nav-link">
+                    <a href="../pages/file-manager.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>File Manager</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/projects.html" class="nav-link">
+                    <a href="../pages/projects.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Projects</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/pricing.html" class="nav-link">
+                    <a href="../pages/pricing.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Pricing</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/faq.html" class="nav-link">
+                    <a href="../pages/faq.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>FAQ</p>
                     </a>
@@ -818,13 +814,13 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="./pages/500.html" class="nav-link">
+                        <a href="../pages/500.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>500</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="./pages/maintenance.html" class="nav-link">
+                        <a href="../pages/maintenance.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Maintenance</p>
                         </a>
@@ -834,7 +830,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="./users.html" class="nav-link">
+                <a href="{{ route('users') }}" class="nav-link">
                   <i class="nav-icon bi bi-people"></i>
                   <p>Users</p>
                 </a>
@@ -860,19 +856,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="{{ route('login') }}" class="nav-link">
+                        <a href="../examples/login.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Login</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="{{ route('register') }}" class="nav-link">
+                        <a href="../examples/register.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Register</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="{{ route('forgot-password') }}" class="nav-link">
+                        <a href="../examples/forgot-password.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Forgot Password</p>
                         </a>
@@ -889,13 +885,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="{{ route('login-v2') }}" class="nav-link">
+                        <a href="../examples/login-v2.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Login</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="{{ route('register-v2') }}" class="nav-link">
+                        <a href="../examples/register-v2.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Register</p>
                         </a>
@@ -903,7 +899,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ route('lockscreen') }}" class="nav-link">
+                    <a href="../examples/lockscreen.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Lockscreen</p>
                     </a>
@@ -1002,7 +998,7 @@
             <!-- Docs CTA (bottom of sidebar) -->
             <div class="p-3 mt-3 border-top border-secondary border-opacity-25">
               <a
-                href="./docs/introduction.html"
+                href="../docs/introduction.html"
                 class="btn btn-sm btn-outline-light w-100 d-flex align-items-center justify-content-center gap-2"
               >
                 <i class="bi bi-book" aria-hidden="true"></i>
@@ -1014,80 +1010,100 @@
         <!--end::Sidebar Wrapper-->
       </aside>
       <!--end::Sidebar-->
-      <!--begin::App Main-->
       <main class="app-main">
-        <!--begin::App Content Header-->
         <div class="app-content-header">
-          <!--begin::Container-->
           <div class="container-fluid">
-            <!--begin::Row-->
             <div class="row">
               <div class="col-sm-6">
-                <h1 class="mb-0 fs-3">Starter Page</h1>
+                <h1 class="mb-0 fs-3">Compose Message</h1>
               </div>
               <div class="col-sm-6">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb float-sm-end">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Starter Page</li>
+                    <li class="breadcrumb-item">
+                      <a href="../mailbox/inbox.html">Mailbox</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Compose</li>
                   </ol>
                 </nav>
               </div>
             </div>
-            <!--end::Row-->
           </div>
-          <!--end::Container-->
         </div>
-        <!--end::App Content Header-->
-        <!--begin::App Content-->
         <div class="app-content">
-          <!--begin::Container-->
           <div class="container-fluid">
-            <!--begin::Row-->
-            <div class="row">
-              <div class="col-12">
-                <!--begin::Card-->
-                <div class="card">
-                  <div class="card-header">
-                    <h3 class="card-title">Starter Card</h3>
-
-                    <div class="card-tools">
-                      <button
-                        type="button"
-                        class="btn btn-tool"
-                        data-lte-toggle="card-collapse"
-                        aria-label="Collapse card"
-                      >
-                        <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
-                        <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-tool"
-                        data-lte-toggle="card-remove"
-                        aria-label="Remove card"
-                      >
-                        <i class="bi bi-x-lg"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <!-- /.card-header -->
-                  <div class="card-body">Start creating your amazing application!</div>
-                  <!-- /.card-body -->
-                  <div class="card-footer">The footer of the card</div>
-                  <!-- /.card-footer -->
-                </div>
-                <!--end::Card-->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">New Message</h3>
               </div>
-              <!-- /.col -->
+              <div class="card-body">
+                <form class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label" for="mail-to">To</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="mail-to"
+                      placeholder="recipient@example.com"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="mail-cc">Cc</label>
+                    <input type="text" class="form-control" id="mail-cc" />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="mail-bcc">Bcc</label>
+                    <input type="text" class="form-control" id="mail-bcc" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="mail-subject">Subject</label>
+                    <input type="text" class="form-control" id="mail-subject" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="mail-body">Message</label>
+                    <textarea
+                      id="mail-body"
+                      class="form-control"
+                      rows="12"
+                      placeholder="Write your message&hellip;"
+                      style="min-height: 16rem"
+                    ></textarea>
+                    <small class="text-secondary">
+                      Hook up a rich-text editor such as
+                      <a href="https://quilljs.com/" target="_blank" rel="noopener">Quill</a>
+                      or
+                      <a
+                        href="https://github.com/Ionaru/easy-markdown-editor"
+                        target="_blank"
+                        rel="noopener"
+                        >EasyMDE</a
+                      >
+                      to upgrade this textarea.
+                    </small>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="mail-attach">Attachments</label>
+                    <input type="file" class="form-control" id="mail-attach" multiple />
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer d-flex gap-2">
+                <button class="btn btn-primary" type="button">
+                  <i class="bi bi-send me-1" aria-hidden="true"></i>Send
+                </button>
+                <button class="btn btn-outline-secondary" type="button">
+                  <i class="bi bi-file-earmark me-1" aria-hidden="true"></i>
+                  Save draft
+                </button>
+                <button class="btn btn-outline-danger ms-auto" type="button">
+                  <i class="bi bi-x-lg me-1" aria-hidden="true"></i>Discard
+                </button>
+              </div>
             </div>
-            <!--end::Row-->
           </div>
-          <!--end::Container-->
         </div>
-        <!--end::App Content-->
       </main>
-      <!--end::App Main-->
       <!--begin::Footer-->
       <footer class="app-footer">
         <!--begin::To the end-->
@@ -1103,8 +1119,6 @@
       </footer>
       <!--end::Footer-->
     </div>
-    <!--end::App Wrapper-->
-    <!--begin::Script-->
     <!--begin::Third Party Plugin(OverlayScrollbars)-->
     <script
       src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.11.0/browser/overlayscrollbars.browser.es6.min.js"
@@ -1121,7 +1135,7 @@
       crossorigin="anonymous"
     ></script>
     <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
-    <script src="./js/adminlte.js"></script>
+    <script src="../js/adminlte.js"></script>
     <!--end::Required Plugin(AdminLTE)-->
     <!--begin::OverlayScrollbars Configure-->
     <script>
@@ -1159,7 +1173,5 @@
      module (since 4.1) — no page script needed. Only the no-flash snippet
      in <head> stays inline, because it must run before first paint. -->
     <!--end::Color Mode Toggle-->
-    <!--end::Script-->
   </body>
-  <!--end::Body-->
 </html>
