@@ -512,73 +512,73 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../layout/unfixed-sidebar.html" class="nav-link">
+                    <a href="../layout/unfixed-sidebar" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Default Sidebar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/fixed-sidebar.html" class="nav-link">
+                    <a href="../layout/fixed-sidebar" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Sidebar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/fixed-header.html" class="nav-link">
+                    <a href="../layout/fixed-header" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Header</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/fixed-footer.html" class="nav-link">
+                    <a href="../layout/fixed-footer" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Footer</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/fixed-complete.html" class="nav-link">
+                    <a href="../layout/fixed-complete" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Complete</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/layout-custom-area.html" class="nav-link">
+                    <a href="../layout/layout-custom-area" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout <small>+ Custom Area </small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/sidebar-mini.html" class="nav-link">
+                    <a href="../layout/sidebar-mini" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/collapsed-sidebar.html" class="nav-link">
+                    <a href="../layout/collapsed-sidebar" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Collapsed</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/collapsed-sidebar-without-hover.html" class="nav-link">
+                    <a href="../layout/collapsed-sidebar-without-hover" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Collapsed + No Hover</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/logo-switch.html" class="nav-link">
+                    <a href="../layout/logo-switch" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Logo Switch</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/top-nav.html" class="nav-link">
+                    <a href="../layout/top-nav" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Top Nav <small>+ No Sidebar</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/layout-rtl.html" class="nav-link">
+                    <a href="../layout/layout-rtl" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout RTL</p>
                     </a>
