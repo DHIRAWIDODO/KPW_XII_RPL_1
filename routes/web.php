@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GenreController;
 
 Route::get('/', function () {
     return view('index');
@@ -13,6 +14,14 @@ Route::get('/dashboard2', function () {
 Route::get('/dashboard3', function () {
     return view('index3');
 })->name('dashboard3');
+
+Route::get('/read', function () {
+    return view('read');
+})->name('read');
+
+Route::get('/compose', function () {
+    return view('compose');
+})->name('compose');
 
 Route::get('/login', function () {
     return view('login');
@@ -109,3 +118,5 @@ Route::get('/layout/top-nav', function () {
 Route::get('/layout/layout-rtl', function () {
     return view('layout.layout-rtl');
 })->name('layout-rtl');
+
+Route::resource('genre', GenreController::class);
