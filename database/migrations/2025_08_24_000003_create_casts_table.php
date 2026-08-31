@@ -9,18 +9,17 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('profiles', function (Blueprint $table) {
+        Schema::create('casts', function (Blueprint $table) {
             $table->id();
+            $table->string('nama', 45);
             $table->integer('umur');
             $table->text('bio');
-            $table->text('alamat');
-            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
 
     public function down(): void
     {
-        Schema::dropIfExists('profiles');
+        Schema::dropIfExists('casts');
     }
 };
