@@ -2,63 +2,61 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cast;
 use Illuminate\Http\Request;
 
 class CastController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        $casts = Cast::latest()->get();
+        return view('casts.index', compact('casts'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
+        return view('casts.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'nama'  => 'required|string|max:45',
+            'umur'  => 'required|integer',
+            'bio'   => 'required|string',
+        ]);
+
+        Cast::create($validated);
+
+        return redirect()->route('cast.index')->with('success', 'Cast berhasil ditambahkan.');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function show(Cast $cast)
     {
-        //
+        return view('casts.show', compact('cast'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function edit(Cast $cast)
     {
-        //
+        return view('casts.edit', compact('cast'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Cast $cast)
     {
-        //
+        $validated = $request->validate([
+            'nama'  => 'required|string|max:45',
+            'umur'  => 'required|integer',
+            'bio'   => 'required|string',
+        ]);
+
+        $cast->update($validated);
+
+        return redirect()->route('cast.index')->with('success', 'Cast berhasil diupdate.');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy(Cast $cast)
     {
-        //
+        $cast->delete();
+        return redirect()->route('cast.index')->with('success', 'Cast berhasil dihapus.');
     }
 }
