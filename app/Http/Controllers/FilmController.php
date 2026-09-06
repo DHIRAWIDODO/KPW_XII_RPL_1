@@ -28,11 +28,15 @@ class FilmController extends Controller
         $validated = $request->validate([
             'judul' => ['required', 'string', 'max:45'],
             'tahun' => ['required', 'integer', 'min:1900', 'max:' . (date('Y') + 1)],
-            'genre_id' => ['required', 'exists:genres,id'],
+            'genre_id' => ['required_without:genre_baru', 'nullable', 'exists:genres,id'],
+            'genre_baru' => ['required_without:genre_id', 'nullable', 'string', 'min:5', 'max:45'],
             'ringkasan' => ['required', 'string'],
             'poster' => ['required', 'image', 'mimes:jpg,jpeg,png', 'max:2048'],
             'trailer' => ['nullable', 'mimes:mp4,mov,avi', 'max:20480'],
         ]);
+
+        $validated['genre_id'] = $this->resolveGenreId($validated);
+        unset($validated['genre_baru']);
 
         $validated['poster'] = $request->file('poster')->store('posters', 'public');
 
@@ -64,11 +68,15 @@ class FilmController extends Controller
         $validated = $request->validate([
             'judul' => ['required', 'string', 'max:45'],
             'tahun' => ['required', 'integer', 'min:1900', 'max:' . (date('Y') + 1)],
-            'genre_id' => ['required', 'exists:genres,id'],
+            'genre_id' => ['required_without:genre_baru', 'nullable', 'exists:genres,id'],
+            'genre_baru' => ['required_without:genre_id', 'nullable', 'string', 'min:5', 'max:45'],
             'ringkasan' => ['required', 'string'],
             'poster' => ['nullable', 'image', 'mimes:jpg,jpeg,png', 'max:2048'],
             'trailer' => ['nullable', 'mimes:mp4,mov,avi', 'max:20480'],
         ]);
+
+        $validated['genre_id'] = $this->resolveGenreId($validated);
+        unset($validated['genre_baru']);
 
         if ($request->hasFile('poster')) {
             if ($film->poster) {
@@ -101,5 +109,20 @@ class FilmController extends Controller
         $film->delete();
 
         return redirect()->route('film.index')->with('success', 'Film berhasil dihapus.');
+    }
+
+    /**
+     * Return the genre_id to use, creating a new genre first if the user
+     * typed a brand new genre name instead of picking an existing one.
+     */
+    private function resolveGenreId(array $validated): int
+    {
+        if (! empty($validated['genre_baru'])) {
+            $genre = Genre::firstOrCreate(['nama' => $validated['genre_baru']]);
+
+            return $genre->id;
+        }
+
+        return (int) $validated['genre_id'];
     }
 }

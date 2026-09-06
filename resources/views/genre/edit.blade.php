@@ -17,10 +17,10 @@
             @method('PUT')
             <div class="card-body">
                 <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" name="name" id="name" value="{{ old('name', $genre->name) }}"
-                           class="form-control @error('name') is-invalid @enderror" required>
-                    @error('name')
+                    <label for="nama" class="form-label">Name</label>
+                    <input type="text" name="nama" id="nama" value="{{ old('nama', $genre->nama) }}"
+                           class="form-control @error('nama') is-invalid @enderror" required minlength="5">
+                    @error('nama')
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>

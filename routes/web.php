@@ -36,3 +36,5 @@ Route::middleware('auth')->group(function () {
     Route::resource('cast', CastController::class); 
     Route::post('/film/{film}/kritik', [KritikController::class, 'store'])->name('kritik.store');
 });
+
+Route::view('/terms', 'terms')->name('terms');

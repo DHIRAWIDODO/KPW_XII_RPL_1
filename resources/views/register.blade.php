@@ -79,7 +79,7 @@
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="agreeTerms" name="terms" required>
                     <label for="agreeTerms" class="form-check-label">
-                        I agree to the <a href="#">terms</a>
+                        I agree to the <a href="{{ route('terms') }}" target="_blank">terms</a>
                     </label>
                 </div>
             </div>
