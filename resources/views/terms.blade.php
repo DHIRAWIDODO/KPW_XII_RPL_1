@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Syarat & Ketentuan</title>
+    <title>Terms and Conditions</title>
     <style>
         body { font-family: sans-serif; max-width: 700px; margin: 40px auto; line-height: 1.6; padding: 0 20px; }
         h1 { font-size: 24px; }
@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-    <h1>Syarat & Ketentuan</h1>
+    <h1>Terms and Conditions</h1>
     <p>Terakhir diperbarui: {{ date('d F Y') }}</p>
 
     <h2>1. Penggunaan Sistem</h2>
