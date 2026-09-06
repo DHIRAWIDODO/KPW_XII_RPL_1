@@ -28,6 +28,11 @@ class Film extends Model
         return $this->hasMany(Kritik::class);
     }
 
+    public function perans()
+    {
+    return $this->hasMany(Actor::class);
+    }
+
     public function getAverageRatingAttribute()
     {
         return round($this->kritiks->avg('point'), 1);

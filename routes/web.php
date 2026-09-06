@@ -6,6 +6,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\FilmController;
 use App\Http\Controllers\KritikController;
+use App\Http\Controllers\ActorController;
+use App\Http\Controllers\CastController;
 
 // Halaman untuk yang BELUM login
 Route::middleware('guest')->group(function () {
@@ -30,5 +32,7 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('genre', GenreController::class);
     Route::resource('film', FilmController::class);
+    Route::resource('actor', ActorController::class);
+    Route::resource('cast', CastController::class); 
     Route::post('/film/{film}/kritik', [KritikController::class, 'store'])->name('kritik.store');
 });

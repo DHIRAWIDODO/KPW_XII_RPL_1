@@ -56,6 +56,56 @@
                     </ul>
                 </li>
 
+                {{-- Cast (resource route) --}}
+                <li class="nav-item">
+                    <a href="#" class="nav-link {{ request()->routeIs('cast.*') ? 'active' : '' }}">
+                        <i class="nav-icon bi bi-person-badge"></i>
+                        <p>
+                            Cast
+                            <i class="nav-arrow bi bi-chevron-right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('cast.index') }}" class="nav-link {{ request()->routeIs('cast.index') ? 'active' : '' }}">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>All Cast</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('cast.create') }}" class="nav-link {{ request()->routeIs('cast.create') ? 'active' : '' }}">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>Add Cast</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                {{-- Actor / Peran (resource route) --}}
+                <li class="nav-item">
+                    <a href="#" class="nav-link {{ request()->routeIs('actor.*') ? 'active' : '' }}">
+                        <i class="nav-icon bi bi-person-video2"></i>
+                        <p>
+                            Actor
+                            <i class="nav-arrow bi bi-chevron-right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('actor.index') }}" class="nav-link {{ request()->routeIs('actor.index') ? 'active' : '' }}">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>All Actor</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('actor.create') }}" class="nav-link {{ request()->routeIs('actor.create') ? 'active' : '' }}">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>Add Actor</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
             </ul>
         </nav>
     </div>
